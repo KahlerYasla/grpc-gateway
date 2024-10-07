@@ -1,0 +1,19 @@
+// protos/auth.proto
+syntax = "proto3";
+
+package auth;
+
+option go_package = "/gen";
+
+service AuthService {
+    rpc GenerateToken (AuthRequest) returns (AuthResponse);
+}
+
+message AuthRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message AuthResponse {
+    string token = 1;
+}

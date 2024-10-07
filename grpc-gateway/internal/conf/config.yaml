@@ -1,0 +1,6 @@
+server:
+    address: ":50051"
+
+mongodb:
+    uri: "mongodb+srv://garpayyasla:6nyYGUHEBXQi7Jb@dbname.cntos.mongodb.net/"
+    database: "dbname"
